@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
                     calculator_textView.text = ((one.toDouble())*(two.toDouble())).toString()
                 }
             }catch (e: ArithmeticException){
-
+                //Arithmetic exceptions like DivideByZero Exception are caught with this block
             }
         }
     }
@@ -123,6 +123,7 @@ class MainActivity : AppCompatActivity() {
             false
         } else {
             value.contains("/")||value.contains("-")||value.contains("*")||value.contains("+")
+            //Operator-check is being done in this part
         }
     }
 }
